@@ -12,7 +12,10 @@ public class BankAccount {
         this.balanceAmount = balanceAmount;
     }
 
-    public double depositAmount(double amount, boolean branch){
+    public double depositAmount(double amount, boolean branch) throws Exception {
+        if (amount < 0) {
+            throw new IllegalArgumentException();
+        }
         balanceAmount = balanceAmount + amount;
         return balanceAmount;
     }
