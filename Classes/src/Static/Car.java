@@ -82,6 +82,7 @@ public class Car {
     }
 
     public static void setDrivingPostion(String drivingPostion) {
+
         Car.drivingPostion = drivingPostion;
     }
 }
