@@ -1,4 +1,4 @@
-package Pojo;
+package Record;
 
 public class Player {
 
