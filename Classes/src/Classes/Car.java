@@ -21,6 +21,14 @@ public class Car {
         this.isTurboCharged = isTurboCharged;
     }
 
+    public Car(String model, String variant, int engineVolumeInCC, boolean isTurboCharged) {
+        this("Volkswagon", model, variant, engineVolumeInCC,isTurboCharged);
+        this.model = model;
+        this.variant = variant;
+        this.engineVolumeInCC = engineVolumeInCC;
+        this.isTurboCharged = isTurboCharged;
+    }
+
     public String getManufacturer() {
         return manufacturer;
     }

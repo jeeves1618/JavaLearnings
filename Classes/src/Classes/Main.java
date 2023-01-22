@@ -12,5 +12,8 @@ public class Main {
 
         Car thirdCar = new Car();
         System.out.println(thirdCar.describeCar());
+
+        Car myVwCar = new Car("Virtus", "TSI GT", 1496, true);
+        System.out.println(myVwCar.describeCar());
     }
 }
