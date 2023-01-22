@@ -34,6 +34,10 @@ public class Main {
                     }, "Team Australia", "Top Order Batsman"
             );
             System.out.println(player);
+            //Now if you want to print the getter for name, you have to use like this.
+            System.out.println(player.name());
+            //So, in records we use getters by dropping the get. But, records do not have any setters.
+            //Because, records are predominantly for immutable records.
         }
     }
 }
