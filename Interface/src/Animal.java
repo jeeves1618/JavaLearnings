@@ -1,9 +1,11 @@
 public class Animal {
 
+    protected String speciesName;
     private double weightInKgs;
     private String diet;
 
-    public Animal(double weightInKgs, String diet) {
+    public Animal(String speciesName, double weightInKgs, String diet) {
+        this.speciesName = speciesName;
         this.weightInKgs = weightInKgs;
         this.diet = diet;
     }
