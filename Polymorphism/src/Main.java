@@ -6,5 +6,8 @@ public class Main {
 
         Movie movie1 = new Adventure("The Boring Movie");
         movie1.watchMovie();
+
+        Movie movie2 = new Comedy("The Laughing Movie");
+        movie2.watchMovie();
     }
 }

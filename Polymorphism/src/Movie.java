@@ -21,6 +21,26 @@ class Adventure extends Movie{
     @Override
     public void watchMovie() {
         super.watchMovie();
-        System.out.printf("..%s%n".repeat(3),"A thrilling chase through a raging river", "The plot thickens further", "Something unusual happens to an otherwise boring character");
+        System.out.printf("..%s%n".repeat(3),
+                "A thrilling chase through a raging river",
+                "The plot thickens further",
+                "Something unusual happens to an otherwise boring character");
     }
 }
+
+class Comedy extends Movie{
+
+    public Comedy(String title) {
+        super(title);
+    }
+
+    @Override
+    public void watchMovie() {
+        super.watchMovie();
+        System.out.printf("..%s%n".repeat(3),
+                "A not so smart and not aware of that person",
+                "Does something stupid",
+                "People around pretend that they are smarter and laugh");
+    };
+    }
+
