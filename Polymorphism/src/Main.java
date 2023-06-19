@@ -1,7 +1,7 @@
 public class Main {
 
     public static void main(String[] args) {
-        Movie movie = new Movie("Matrix");
+        Movie movie = new Adventure("Matrix");
         movie.watchMovie();
 
         Movie movie1 = new Adventure("The Boring Movie");
