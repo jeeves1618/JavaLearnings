@@ -9,5 +9,14 @@ public class Main {
 
         Movie movie2 = new Comedy("The Laughing Movie");
         movie2.watchMovie();
+
+        Movie movie3 = Movie.getMovie("Adventure", "Lord of the Rings");
+        movie3.watchMovie();
+
+        Movie movie4 = Movie.getMovie("Romance", "Pride and Prejudice");
+        movie4.watchMovie();
+
+        Movie movie5 = Movie.getMovie("Comedy", "Pink Panther");
+        movie5.watchMovie();
     }
 }
