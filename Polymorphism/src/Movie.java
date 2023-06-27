@@ -1,6 +1,10 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Movie {
 
     private String title;
+    private static List<String> genreList = new ArrayList<>();
 
     public Movie(String title) {
         this.title = title;
@@ -18,6 +22,15 @@ public class Movie {
             case 'R' -> new Romance(title);
             default -> new Movie(title);
         };
+    }
+
+    public static List<String> addGenre(){
+        genreList.add("Please type A for Adventure, ");
+        genreList.add("C for Comedy, ");
+        genreList.add("R for Romanace, ");
+        genreList.add("S for Sci Fi, ");
+        genreList.add("or Q for Quit : ");
+        return genreList;
     }
 }
 
