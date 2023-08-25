@@ -113,5 +113,8 @@ public class ArrayListMain {
         System.out.println(legends);
 
         //To convert a list into an array, use toArray method.
+
+        //ArrayList doesn't support primitive type. List<int> listOfNumbers = new ArrayList<>(); won't work.
+        List<Integer> listOfNumbers = new ArrayList<>(); //This will work.
     }
 }

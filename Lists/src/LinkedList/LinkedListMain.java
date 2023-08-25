@@ -80,5 +80,8 @@ public class LinkedListMain {
         booksToRead.pop();
         System.out.println(booksToRead);//Removes the first element
         System.out.println("---------------------------------------------------------");
+
+        //LinkedList doesn't support primitive type. List<int> listOfNumbers = new LinkedList<>(); won't work.
+        List<Integer> listOfNumbers = new LinkedList<>(); //This will work.
     }
 }
