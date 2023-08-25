@@ -48,6 +48,10 @@ class Adventure extends Movie{
                 "The plot thickens further",
                 "Something unusual happens to an otherwise boring character");
     }
+
+    public void experienceAdventure(){
+        System.out.println("I was in the edge of my seat");
+    }
 }
 
 class Comedy extends Movie{
@@ -64,6 +68,10 @@ class Comedy extends Movie{
                 "Does something stupid",
                 "People around pretend that they are smarter and laugh");
     };
+
+    public void experienceComedy(){
+        System.out.println("I was laughing so loud that I ended up irritating other audience");
+    }
 }
 
 class Romance extends Movie{
@@ -80,5 +88,9 @@ class Romance extends Movie{
                 "Usually because of the unrealistic imagination of the story writers",
                 "Then they either kiss or kill themselves in the end");
     };
+
+    public void experienceRomance(){
+        System.out.println("I realized I am too old for this");
+    }
 }
 

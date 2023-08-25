@@ -13,10 +13,24 @@ public class Main {
         Movie movie3 = Movie.getMovie("Adventure", "Lord of the Rings");
         movie3.watchMovie();
 
-        Movie movie4 = Movie.getMovie("Romance", "Pride and Prejudice");
-        movie4.watchMovie();
+        Object movie4 = Movie.getMovie("Romance", "Pride and Prejudice");
+        Romance romanceMovie = (Romance)movie4;
+        romanceMovie.watchMovie();
 
-        Movie movie5 = Movie.getMovie("Comedy", "Pink Panther");
+        var movie5 = Movie.getMovie("Comedy", "Pink Panther");
         movie5.watchMovie();
+
+        //Different ways of casting.
+
+        Object unknownMovieType = Movie.getMovie("Adventure", "Fast and Fearless");
+        //Way 1
+        Adventure adventure = (Adventure) unknownMovieType;
+        adventure.watchMovie();
+        //Way 2
+        ((Adventure) unknownMovieType).watchMovie();
+        //Way 3
+        if (unknownMovieType instanceof Adventure adv){
+            adv.watchMovie();
+        }
     }
 }
