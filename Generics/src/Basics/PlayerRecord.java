@@ -1,3 +1,5 @@
+package Basics;
+
 public class PlayerRecord <T extends Player>{
 
     private T player;
