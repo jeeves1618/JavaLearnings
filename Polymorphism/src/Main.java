@@ -32,5 +32,13 @@ public class Main {
         if (unknownMovieType instanceof Adventure adv){
             adv.watchMovie();
         }
+
+        System.out.println("------------------------------- TYPE TESTING -------------------------------");
+        Adventure a1 = new Adventure("The Matrix");
+        Movie a2 = new Adventure("Jaws");
+        Movie a3 = a2;
+        Adventure a4 = a1;
+        //Adventure a5 = a2; Will not work. Since the compiler doesn't know at compile time whether the reference type a2 corresponds to adventure or not.
+        Movie a5 = a1; //This will work. Moving the reference of child to parent will work, but not parent to child
     }
 }

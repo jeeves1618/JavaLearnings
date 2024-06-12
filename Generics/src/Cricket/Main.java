@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        CricketTeam madrasSoulShakers = new CricketTeam("Madras Soul Shakers");
+        CricketTeam madrasSoulShakers = new CricketTeam("Madras Melee Makers");
         CricketTeam calcuttaCatCatchers = new CricketTeam("Calcutta Cat Catchers");
 
         matchResults(madrasSoulShakers, 183, calcuttaCatCatchers, 145);
